@@ -1,0 +1,8 @@
+<app-user-item></app-user-item>
+
+<ul>
+    @for (mario of names; track mario) { <!-- il ciclo for, conta quanti elementi ci sono all'interno di names
+            e la variabile mario, varia a seconda della variabile corrente-->
+        <app-user-item [name] = "mario"></app-user-item>
+    }
+  </ul>
